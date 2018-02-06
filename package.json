@@ -1,0 +1,10 @@
+{
+  "name": "simter-vue-hello",
+  "version": "0.1.0",
+  "description": "The .vue component base environment config",
+  "main": "dist/st-hello.js",
+  "module": "dist/st-hello.esm.js",
+  "repository": "https://github.com/simter/simter-vue-hello.git",
+  "author": "RJ.Hwang <rongjihuang@gmail.com>",
+  "license": "MIT"
+}
