@@ -12,14 +12,19 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
+    "dev": "parcel demo/index.html -d temp",
+    "clean": "rm -rf dist/* temp/*",
     "build": " npm run clean && rollup -c && npm run min-js",
     "min-js": "uglifyjs dist/st-hello.js -o dist/st-hello.min.js --source-map=url"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-vue": "^1.5.0",
     "rollup-plugin-vue": "^3.0.0",
     "stylus": "^0.54.5",
     "uglify-es": "^3.3.9",
+    "vue": "^2.5.13",
     "vue-template-compiler": "^2.5.13"
   }
 }
